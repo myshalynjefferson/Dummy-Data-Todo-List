@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./todo.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Dummy To Do List</title>
+  </head>
+  <body>
+    <button onclick="fetchTodos()">Fetch Todos</button>
+    <button onclick="logTodos()">Log Todos</button>
+    <button onclick="populateTodos()">Populate Todos</button>
+    <button onclick="clearTodos()" type="button">Clear Todos</button>
+
+    <form>
+      <br />
+      <label for="number_input">Enter a number between 1 and 10</label>
+      <input type="number" id="number_input" min="1" max="10" />
+
+      <button onclick="filterById()" type="button">Todos by User</button>
+      <button onclick="filterByCompleted()" type="button">
+        Filter Completed
+      </button>
+    </form>
+
+    <ol id="todo-list">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, ab facilis eaque doloremque, vero eos et officiis praesentium est ducimus suscipit? Eaque perspiciatis qui possimus nesciunt pariatur veniam quis minima?
+    </ol>
+  </body>
+</html>
